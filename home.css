@@ -54,7 +54,6 @@ nav li:first-child{
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  font-weight: bold;
 }
 .sidebar li{
   width: 100%;
@@ -77,6 +76,9 @@ nav li:first-child{
   background-color:#62d2e9 ;
   border: none;
 }
+.logo img{
+  width: 100px;
+}
 
 .menu-button{
   display: none;
@@ -87,12 +89,21 @@ nav li:first-child{
   }
   .menu-button{
     display: block;
+    margin-top: 9px;
+    margin-right: 9px;
+  }
+  .nav-button{
+    margin-top: 9px;
+    font-size: xx-small;
+  }
+  .logo img{
+    width: 70px;
+    margin-top: 9px;
   }
 }
 @media(max-width:400px){
   .sidebar{
     width: 100%;
-    font-weight: bold;
   }
 }
 
@@ -109,7 +120,7 @@ nav li:first-child{
   }
 
   #particles-js{
-    height: 70vh;
+    height: 85vh;
   }
 }
 
@@ -124,7 +135,7 @@ nav li:first-child{
 }
 .hero-text{
     color: #022931;
-  
+    
 }
 .hero-text .btn{
     background-color: #049bb9;
@@ -133,6 +144,7 @@ nav li:first-child{
     padding-left: 15px;
     padding-right: 15px;
     margin-left: -4px;
+    color: white;
 }
 .hero-image img{
     width: 400px;
@@ -149,13 +161,13 @@ nav li:first-child{
   }
   .hero-text{
     position: absolute;
-    bottom: 200px;
+    bottom: 40px;
     font-weight: bolder;
   }
   .hero-image img{
     position: relative;
     width: 240px;
-    bottom: 250px;
+    bottom: 150px;
     right: 20px;
     
   }
