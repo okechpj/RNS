@@ -3,7 +3,7 @@ body{
   padding: 0;
   box-sizing: border-box;
   background-color: #ffffff;
-  font-size: large;
+  min-height: 100vh;
 }
 
 #particles-js{
@@ -13,71 +13,107 @@ body{
  
 }
 
-.nav-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+
+}
+nav a{
+  height: 90%;
+  padding: 0 30px ;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover{
+  font-size: large;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.185);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.hideOnMobile img{
+  width: 100px;
+}
+.nav-button {
+  font-weight: bold;
+  background-color:#049bb9;
+  color: white;
+  margin-right: 50px;
+  margin-left: 15px;
+}
+.nav-button:hover {
+  color: white;
+  background-color:#62d2e9 ;
+  border: none;
 }
 
-@media only screen and (max-width: 768px) {
-  body {
-    font-size: ;
-    margin: 0;
-    padding: 0;
-    border: 2px solid black;
-  }
-  .nav-bar{
-    display: flex;
-   padding: 10px;
-  }
-  .nav ul a{
+.menu-button{
+  display: none;
+}
+@media(max-width: 800px){
+  .hideOnMobile{
     display: none;
   }
-  .logo{
-    width: 70px;
-    margin-left: 20px;
+  .menu-button{
+    display: block;
   }
-  .logo img{
-    max-width: 70px;
+}
+@media(max-width:400px){
+  .sidebar{
+    width: 100%;
+    font-weight: bold;
   }
-  .nav .btn{
-    font-size: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+  *{
+    margin: 0;
+    padding: 0;
   }
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+
   #particles-js{
     height: 70vh;
   }
 }
-.logo img{
-  width: 170px;
-}
-.nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 30px;
-}
-.nav ul li{
-    text-decoration: none;
-    list-style-type: none;
 
-}
-.nav ul a{
-    text-decoration: none;
-    margin-left: 50px;
-    color: black;
-}
-.nav .btn{
-    font-weight: bold;
-    background-color:#049bb9;
-    color: white;
-    margin-left: 50px;
-}
-.nav .btn:hover{
-    color: white;
-    background-color:#62d2e9 ;
-    border: none;
-}
+
 .hero{
     display: flex;
     flex-direction: row;
@@ -99,11 +135,11 @@ body{
     margin-left: -4px;
 }
 .hero-image img{
-    width: 380px;
+    width: 400px;
     margin-left: 30px;
 }
 
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 800px){
   .hero{
     display: flex;
     flex-direction: column;
@@ -118,7 +154,7 @@ body{
   }
   .hero-image img{
     position: relative;
-    width: 290px;
+    width: 240px;
     bottom: 250px;
     right: 20px;
     
@@ -166,11 +202,15 @@ body{
     justify-content: space-between;
     padding: 30px;
 }
+.reverse{
+  display: flex;
+  flex-direction: row-reverse;
+}
 
 .services-types{
     margin-bottom: 50px;
 }
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 800px){
   .service-section{
     display: flex;
     flex-direction: column;
@@ -245,7 +285,7 @@ body{
     text-align: center;
 }
 
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 800px){
   .advantage-title{
     padding: 25px;
   }
@@ -353,7 +393,7 @@ body{
     justify-content: space-between;
   }
 
-  @media only screen and (max-width: 768px){
+  @media screen and (max-width: 800px){
     .contact-form{
       display: flex;
       flex-direction: column;
@@ -386,7 +426,7 @@ body{
     color: white;
     padding: 10px;
   }
-  @media only screen and (max-width: 768px){
+  @media screen and (max-width: 800px){
     #footer-body{
       display: flex;
       flex-direction: column;

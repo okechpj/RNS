@@ -10,23 +10,27 @@
 </head>
 <body>
     <div id="particles-js">
-        <div class="nav-wrapper">
-            <div class="nav-bar">
-                <div class="logo">
-                    <img src="images/RNS_New_Logo-removebg.png" alt="logo">
-                </div>
-    
-                <div class="nav">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <button class="btn">Shop with us</button>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <nav>
+            <ul class="sidebar">
+              
+                <i class="bi bi-x-lg" onclick=hideSidebar()></i>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">All in one</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+            <ul style=" font-weight: bold;">
+             
+                <li class="hideOnMobile"><a href="#"><img src="images/RNS_New_Logo-removebg.png" alt=""></a></li>
+                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li class="hideOnMobile"><a href="#">Services</a></li>
+                <li class="hideOnMobile"><a href="#">All in one</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <button class="btn nav-button">Shop with us</button>
+                <i class="bi bi-list menu-button" onclick=showSidebar()></i>
+            </ul>
+        </nav>
         
         <div class="nav container">
             <div class="hero container">
@@ -48,7 +52,7 @@
                 </div>
     
                 <div class="hero-image">
-                    <img src="images/about-image.png" alt="">
+                    <img src="images/hero-image.png" alt="">
                 </div>
             </div>
         </div>
@@ -90,14 +94,16 @@
         </div>
 
         <div class="services-types">
-            <div class="service-section">
-                <div class="services-text">
-                    <h3><b>ICT Project Management</b></h3>
-                    <p>As your local partner for project management and strategy execution, we apply integrated solutions with dynamic talent, ensuring your organization excels. With proven success in delivering business priorities, RNS leverages a vast network of resources and stays ahead with adaptive approaches. Our commitment to quality includes executive oversight, forging unparalleled client relationships. As project management consultants, RNS enhances PMO performance with proven approaches implemented in numerous organizations.</p>
+            <div class="service-section reverse">
+
+                <div class="services-image" style="align-items: end;">
+                    <img src="images/Project management new.svg" alt="">
                 </div>
 
-                <div class="services-image">
-                    <img src="images/Project management new.svg" alt="">
+
+                <div class="services-text" style="align-items: end;">
+                    <h3><b>ICT Project Management</b></h3>
+                    <p>As your local partner for project management and strategy execution, we apply integrated solutions with dynamic talent, ensuring your organization excels. With proven success in delivering business priorities, RNS leverages a vast network of resources and stays ahead with adaptive approaches. Our commitment to quality includes executive oversight, forging unparalleled client relationships. As project management consultants, RNS enhances PMO performance with proven approaches implemented in numerous organizations.</p>
                 </div>
             </div>
         </div>
@@ -118,14 +124,15 @@
         
 
         <div class="services-types">
-            <div class="service-section">
+            <div class="service-section reverse">
+                <div class="services-image">
+                    <img src="images/Wiring.svg" alt="">
+                </div>
+
+
                 <div class="services-text">
                     <h3><b>Structured Cabling</b></h3>
                     <p>We deliver scalable cabling solutions nationwide. Our certified technicians design, install, and maintain wired network infrastructure for businesses and institutions of all sizes. From Cat5E & Cat6 to coaxial and fiber optic installations, RNS simplifies the entire process, ensuring seamless connectivity and efficient technology solutions.</p>
-                </div>
-
-                <div class="services-image">
-                    <img src="images/Wiring.svg" alt="">
                 </div>
             </div>
         </div>
@@ -147,15 +154,16 @@
         </div>
 
         <div class="services-types">
-            <div class="service-section">
-                <div class="services-text">
-                    <h3><b>Access Control</b></h3>
-                    <p>Routed Network Solutions empowers government, education, and private sector clients with robust Access Control and Door Access Control Systems. Our full line of complimentary Access Control products and solutions is designed to meet your specific security requirements effectively.</p>
-                </div>
-
+            <div class="service-section reverse">
                 <div class="services-image">
                     <img src="images/Access ctrl new.svg" alt="">
                 </div>
+
+
+                <div class="services-text">
+                    <h3><b>Access Control</b></h3>
+                    <p>Routed Network Solutions empowers government, education, and private sector clients with robust Access Control and Door Access Control Systems. Our full line of complimentary Access Control products and solutions is designed to meet your specific security requirements effectively.</p>
+                </div>  
             </div>
         </div>
 
@@ -176,14 +184,14 @@
         </div>
 
         <div class="services-types">
-            <div class="service-section">
+            <div class="service-section reverse">
+                <div class="services-image">
+                    <img src="images/Surveillance Cameras.jpg" alt="">
+                </div>
+
                 <div class="services-text">
                     <h3><b>Survaillance Systems</b></h3>
                     <p>RNS specializes in designing and implementing comprehensive video surveillance and access control systems. Our CCTV/IP Surveillance Systems, trusted by government, education, and private sectors, ensure secure operations. Whether safeguarding assets, personnel, or monitoring operations, RNS offers advanced IP surveillance solutions tailored to your specific needs.</p>
-                </div>
-
-                <div class="services-image">
-                    <img src="images/Surveillance Cameras.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -440,5 +448,17 @@
     <script src="particles.js"></script>
     <script src="app.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 </html>
