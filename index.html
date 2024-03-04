@@ -19,23 +19,6 @@
 
     <script src="script.js"></script>
     <link rel="stylesheet" href="home.css">
-    <style>
-        @font-face {
-            font-family: myFont;
-            src: url(harper.otf);
-        }
-        h1,h2 {
-            font-family: myFont;
-        }
-        h3{
-            font-family: myFont;
-            font-size: 23px;
-        }
-        p{
-            font-family: Cabin;
-            src: url(Cabin.ttf);
-        }
-    </style>
     <title>RNS</title>
 </head>
 <body>
@@ -44,31 +27,31 @@
             <ul class="sidebar">
               
                 <i class="bi bi-x-lg" style="cursor: pointer;" onclick=hideSidebar()></i>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">All in one</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <button class="btn nav-button" onclick="redirect()" >Shop with us</button>
             </ul>
-            <ul>
+            <ul class="nav-bar">
              
-                <li class="logo"><a href="#"><img src="images/RNS_New_Logo-removebg.png" alt=""></a></li>
-                <li class="hideOnMobile"><a href="#">About</a></li>
-                <li class="hideOnMobile"><a href="#">Services</a></li>
-                <li class="hideOnMobile"><a href="#">All in one</a></li>
-                <li class="hideOnMobile"><a href="#">Contact</a></li>
-                <button class="btn nav-button">Shop with us</button>
+                <li class="logo"><a href="#home"><img src="images/RNS_New_Logo-removebg.png" alt=""></a></li>
+                <li class="hideOnMobile"><a href="#home">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#services">Services</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <button class="btn nav-button hideOnMobile" onclick="redirect()">Shop with us</button>
                 <i class="bi bi-list menu-button" style="font-size: xx-large;" onclick=showSidebar()></i>
             </ul>
         </nav>
         
         <div class="nav container">
-            <div class="hero container">
+            <div class="hero container" id="home">
                 <div class="hero-text container">
                     <h1>Elevate your business with Routed Network Solutions </h1>
                     <p>Where expertise meets innovation, delivering tailored technology solutions for unparalleled success</p>
                     
-                    <button class="btn">Get Started Now! > </button>
+                    <button class="btn"><a href="#all_in_one">Get Started Now!</a>  </button>
                     <div class="header-icon">
                         <script src="https://cdn.lordicon.com/lordicon.js"></script>
                         <lord-icon id="lordicon"
@@ -77,7 +60,7 @@
                             style="width:50px;height:90px">
                         </lord-icon>
     
-                        <h5><a href="#">About Us</a></h5>
+                        <h5><a href="#about">About Us</a></h5>
                     </div>   
                 </div>
     
@@ -88,7 +71,7 @@
         </div>
     </div>
 
-    <div class="about container">
+    <div class="about container" id="about">
         <div class="title">
             <h2><b>Why Us?</b></h2>
             <hr>
@@ -109,13 +92,13 @@
              style="width:220px;height:220px">
          </lord-icon>
   
-         <button class="neon-button">Get in Touch</button>
+         <button class="neon-button"> <a href="#contact">Get in Touch</a></button>
         </div>
        
      </div>
 
 
-    <div class="services container">
+    <div class="services container" id="services">
         <div class="title">
             <h2><b>Our Services</b></h2><br>
             <hr>
@@ -242,13 +225,13 @@
 
  
 
-    <div class="advantages ">
+    <div class="advantages " id="all_in_one">
         <div class="advantage-title">
             <p><b>One platform, All Features</b></p>
             <h2><b>Supercharge Your Dream Technology & Scale Effortlessly On Our Cloud Based Architecture</b></h2>
         </div>
        
-        <div class="advantages-list container">
+        <div class="advantages-list container" >
           
           
             <div class="list">
@@ -337,7 +320,7 @@
         </div>
     </div>
     
-    <div class="contact container">
+    <div class="contact container" id="contact">
         <div class="title">
             <h1>Talk to Us</h1>
         </div>
@@ -358,7 +341,7 @@
     
                     <div class="info-contact">
                         <p><b>Phone Number</b></p>
-                        <p>+254 12345678</p>
+                        <p><a href="tel:+254 12345678">+254 12345678</a></p>
                     </div>
                 </div>
     
@@ -377,7 +360,7 @@
     
                     <div class="info-contact">
                         <p><b>Email Address</b></p>
-                        <p>info@routednetworksolutions.com</p>
+                        <p><a href="mailto:info@routednetworksolutions.com" >info@routednetworksolutions.com</a></p>
                     </div>
                 </div>
     
@@ -395,7 +378,7 @@
     
                     <div class="info-contact">
                         <p><b>Location</b></p>
-                        <p>Google map</p>
+                        <p> <a href="https://www.google.com/maps/d/embed?mid=1VeQC6-l5X8bbXHY4Y87eGOuYQoE1l88&ehbc=2E312F" target="_blank">Google map</a></p>
                     </div>
                 </div>
             </div>
@@ -435,6 +418,11 @@
         </div>
     </div>
 
+
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-46644e74-47bc-4f91-aa54-43855dcdd219" data-elfsight-app-lazy></div>
+
+    
     <footer>
         <div class="footer container" id="footer-body" >
             <div class="footer-text">
@@ -457,15 +445,15 @@
 
             <div class="footer-text">
                 <p><b>Support</b></p>
-                <a href="#">Help Center</a>
-                <a href="#">Contact Us</a>
+                <a href="tel:+254 12345678">Help Center</a>
+                <a href="tel:+254 12345678">Contact Us</a>
             </div>
 
             <div class="footer-text">
                 <p><b>Contact Information</b></p>
-                <a href="#"> <i class="bi bi-telephone-fill m-1"></i> +254 111566445</a>
+                <a href="tel:+254 12345678"> <i class="bi bi-telephone-fill m-1"></i> +254 111566445</a>
                 <a href="mailto:info@routednetworksolutions.com"><i class="bi bi-envelope-fill  m-1"></i> rns@gmail.com</a>
-                <a href="#"><i class="bi bi-geo-alt-fill m-1"></i> Kisumu, Kenya</a>
+                <a href="https://www.google.com/maps/d/embed?mid=1VeQC6-l5X8bbXHY4Y87eGOuYQoE1l88&ehbc=2E312F" target="_blank"><i class="bi bi-geo-alt-fill m-1"></i>East Africa, Africa</a>
             </div>
         </div>
         <div>
@@ -474,8 +462,7 @@
         
     </footer>
 
-    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-    <div class="elfsight-app-46644e74-47bc-4f91-aa54-43855dcdd219" data-elfsight-app-lazy></div>
+   
     
 
     <!--bootstrap-->

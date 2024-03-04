@@ -8,3 +8,8 @@ function sendMail(){
     }
     emailjs.send("service_owqnqhi", "template_o0sbzrm", param).then(alert("Email has been sent!!"))
 }
+
+function redirect(){
+    window.location.href = 'shop.html'
+}
+

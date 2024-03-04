@@ -6,6 +6,23 @@ body{
   min-height: 100vh;
 }
 
+@font-face {
+  font-family: myFont;
+  src: url(harper.otf);
+}
+h1,h2 {
+  font-family: myFont;
+}
+h3{
+  font-family: myFont;
+  font-size: 23px;
+}
+p{
+  font-family: Cabin;
+  src: url(Cabin.ttf);
+}
+
+
 #particles-js{
     width: 100%;
     height: 100vh;
@@ -32,6 +49,12 @@ nav a{
   display: flex;
   align-items: center;
   color: black;
+  font-family: myFont;
+  
+}
+.nav-bar a{
+  font-family: Cabin;
+  font-weight: bold;
 }
 nav a:hover{
   font-size: large;
@@ -87,6 +110,10 @@ nav li:first-child{
 @media(max-width: 900px){
   .hideOnMobile{
     display: none;
+    font-family: myFont;
+  }
+  .hideOnMobile a{
+    font-family: myFont;
   }
   .menu-button{
     display: block;
@@ -148,6 +175,10 @@ nav li:first-child{
     padding-right: 15px;
     margin-left: -4px;
     color: white;
+}
+.hero-text a{
+  color: white;
+  text-decoration: none;
 }
 .hero-image img{
     width: 400px;
@@ -256,6 +287,10 @@ nav li:first-child{
     display: flex;
     flex-direction: column;
     color: #022931;
+}
+.call a{
+  color: white;
+  text-decoration: none;
 }
 .advantages{
     display: flex;
@@ -366,8 +401,8 @@ nav li:first-child{
     color: white;
   }
   .info-details:hover{
-    background-color: white;
-    border:1px solid  #022931;
+    background-color: #04788f;
+    
     color: black;
    
   }
@@ -378,6 +413,14 @@ nav li:first-child{
   .info-contact{
     line-height: 7px;
     padding: 15px;
+  }
+  .info-contact a{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+  }
+  .info-contact a:hover{
+    color: black;
   }
   .contact{
     display: flex;
