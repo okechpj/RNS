@@ -412,7 +412,7 @@ nav li:first-child{
     }
     .message{
       margin: 50px;
-      width: 400px;
+      width: 100%;
     }
     .message1{
       display: flex;
@@ -420,12 +420,10 @@ nav li:first-child{
       
     }
     .map-frame{
-      
-      width: 400px;
       align-items: center;
     }
     .map-frame iframe{
-      width: 300px;
+      width: 330px;
     }
   }
   .message input, select{
