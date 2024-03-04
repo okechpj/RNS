@@ -425,7 +425,7 @@ nav li:first-child{
       align-items: center;
     }
     .map-frame iframe{
-      width: 450px;
+      width: 300px;
     }
   }
   .message input, select{
