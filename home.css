@@ -423,7 +423,7 @@ nav li:first-child{
       align-items: center;
     }
     .map-frame iframe{
-      width: 330px;
+      width: 370px;
     }
   }
   .message input, select{
