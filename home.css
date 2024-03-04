@@ -19,7 +19,7 @@ nav ul{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: fixed;
+  
 }
 nav li{
   height: 50px;
