@@ -101,7 +101,8 @@ nav li:first-child{
   border: none;
 }
 .logo img{
-  width: 100px;
+  width: 180px;
+  margin-top: 50px;
 }
 
 .menu-button{
@@ -120,15 +121,24 @@ nav li:first-child{
     margin-top: 9px;
     margin-right: 9px;
     cursor: pointer;
+    font-size: 45px;
+    margin-right: 20px;
+    margin-top: 20px;
   }
+  
   .nav-button{
     margin-top: 9px;
     font-size: xx-small;
   }
   .logo img{
-    width: 70px;
-    margin-left: -15px;
+    width: 160px;
+    margin-left: -33px;
   }
+}
+.sidebar .x{
+  font-size: 40px;
+  margin-top: 30px;
+  margin-left: 28px;
 }
 @media(max-width:400px){
   .sidebar{
