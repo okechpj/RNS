@@ -24,65 +24,11 @@
 </head>
 <body>
     <div id="particles-js">
-        <div class="above" style="background-color: red;">
-
-        </div>
-        <nav>
-            <ul class="sidebar">
-              
-<<<<<<< HEAD
-                <i class="bi bi-x-lg x" style="cursor: pointer; color: black;" ></i>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <button class="btn nav-button"  >Shop with us</button>
-            </ul>
-            <ul class="nav-bar">
-             
-                <li class="logo"><a href="#home"><img src="images/RNS_New_Logo-removebg.png" alt=""></a></li>
-                <li class="hideOnMobile"><a href="#home">Home</a></li>
-                <li class="hideOnMobile"><a href="#about">About</a></li>
-                <li class="hideOnMobile"><a href="#services">Services</a></li>
-                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
-                <button class="btn nav-button hideOnMobile" >Shop with us</button>
-                <i class="bi bi-list menu-button" style="color: black;"></i>
-            </ul>
-        </nav>
-        
-        <div class="nav container">
-            <div class="hero container" id="home">
-                <div class="hero-text container">
-                    <h1>Elevate your business with Routed Network Solutions </h1>
-                    <p>Where expertise meets innovation, delivering tailored technology solutions for unparalleled success</p>
-                    
-                    <button class="btn"><a href="#all_in_one">Get Started Now!</a>  </button>
-                    <div class="header-icon">
-                        <script src="https://cdn.lordicon.com/lordicon.js"></script>
-                        <lord-icon id="lordicon"
-                            src="https://cdn.lordicon.com/hgngwpjn.json"
-                            trigger="loop"
-                            style="width:50px;height:90px">
-                        </lord-icon>
-    
-                        <h5><a href="#about" style="color: white;">About Us</a></h5>
-                    </div>   
-                </div>
-    
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="header">
         
         <nav>
             <ul class="sidebar">
               
                 <i class="bi bi-x-lg x" style="cursor: pointer; color: black;" onclick=hideSidebar()></i>
-=======
-                <i class="bi bi-x-lg x" style="cursor: pointer;" onclick=hideSidebar()></i>
->>>>>>> parent of 0ebc896 (hero mobile fix)
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -97,7 +43,7 @@
                 <li class="hideOnMobile"><a href="#services">Services</a></li>
                 <li class="hideOnMobile"><a href="#contact">Contact</a></li>
                 <button class="btn nav-button hideOnMobile" onclick="redirect()">Shop with us</button>
-                <i class="bi bi-list menu-button"  onclick=showSidebar()></i>
+                <i class="bi bi-list menu-button" style="color: black;" onclick=showSidebar()></i>
             </ul>
         </nav>
         
@@ -528,6 +474,16 @@
     <script src="app.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
 
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
 
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 </html>

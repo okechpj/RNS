@@ -34,12 +34,6 @@ p{
     
     background-size: cover;
 }
-@media(min-width: 900px){
-  .header{
-    display: none;
-  }
-}
-
 
 nav ul{
   width: 100%;
@@ -182,25 +176,12 @@ nav li:first-child{
     min-height: 100vh;
     box-sizing: border-box;
   }
-  #particles-js{
-<<<<<<< HEAD
-    display: none;
-=======
-    height: 75vh;
-    
->>>>>>> parent of 0ebc896 (hero mobile fix)
-  }
 
- .header{
-  min-height: 75vh;
-  width: 100%;
-    color: white;
-    position: relative;
-    background-blend-mode: overlay;
-    background: linear-gradient(to right, rgb(0,0,0),rgb(134, 133, 133)), url('/images/bg.jpg');
-    
+  #particles-js{
+    height: 75vh;
+    background: linear-gradient(to right, rgb(0,0,0),rgb(134, 133, 133)), url('/images/bg2.png');
     background-size: cover;
- }
+  }
 }
 
 .hero{
