@@ -179,9 +179,8 @@ nav li:first-child{
 
   #particles-js{
     height: 75vh;
-    background: linear-gradient(to right, rgb(0,0,0),rgb(134, 133, 133)), url('/images/bg2.png');
-    background-size: cover;
-  }
+    
+  
 }
 
 .hero{
