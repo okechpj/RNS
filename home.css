@@ -185,8 +185,8 @@ nav li:first-child{
     color: white;
     position: relative;
     background-blend-mode: overlay;
-    background: linear-gradient(to right, rgb(0,0,0),rgb(134, 133, 133)), url('/images/bg2.png');
-    
+    background: linear-gradient(to right, rgb(0,0,0),rgb(134, 133, 133));
+    background-image: url('/images/bg2.png');
     background-size: cover;
   }
 }
