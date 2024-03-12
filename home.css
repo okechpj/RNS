@@ -30,7 +30,7 @@ p{
     color: white;
     position: relative;
     background-blend-mode: overlay;
-    background: linear-gradient(to right, rgb(0,0,0),rgb(134, 133, 133)), url('/images/bg2.png');
+    background-image: ('/images/bg2.png');
     
     background-size: cover;
 }
@@ -177,7 +177,7 @@ nav li:first-child{
     box-sizing: border-box;
   }
 
-.particles-js{
+  .particles-js{
     height: 75vh;
   }
   
