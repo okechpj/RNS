@@ -183,7 +183,12 @@ nav li:first-child{
     box-sizing: border-box;
   }
   #particles-js{
+<<<<<<< HEAD
     display: none;
+=======
+    height: 75vh;
+    
+>>>>>>> parent of 0ebc896 (hero mobile fix)
   }
 
  .header{
